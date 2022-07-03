@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="msjBienvenida">Bienvenido a la aplicación del clima</string>
+    <string name="txtBtnPActual">Pronostico Actual</string>
+    <string name="txtBtnLCiudades">Listado de Ciudades</string>
+    <string name="descripcionItemLista">Imagen de una estrella amarilla</string>
+</resources>
