@@ -10,6 +10,7 @@ import android.view.View;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,8 +18,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void redirectListActivity(View view){
-        Intent intent = new Intent(this, ListActivity.class);
+        intent = new Intent(this, ListActivity.class);
         startActivity(intent);
 
+    }
+
+    public void redirectDetail(View view){
+        intent = new Intent(this, DetailActivity.class);
+        startActivity(intent);
     }
 }
