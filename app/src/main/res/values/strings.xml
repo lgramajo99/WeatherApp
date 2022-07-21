@@ -4,4 +4,6 @@
     <string name="txtBtnPActual">Pronostico Actual</string>
     <string name="txtBtnLCiudades">Listado de Ciudades</string>
     <string name="descripcionItemLista">Imagen de una estrella amarilla</string>
+    <string name="imagen_de_tilde">Imagen de tilde</string>
+    <string name="contentIcono">Icono de una estrella</string>
 </resources>

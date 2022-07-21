@@ -12,12 +12,12 @@ import java.util.ArrayList;
 public class CustomAdapter extends BaseAdapter {
     private Context context;
     private int layout;
-    private ArrayList<String> names;
+    private ArrayList<String> ciudades;
 
-    CustomAdapter(Context context, int layout, ArrayList<String> names){
+    CustomAdapter(Context context, int layout, ArrayList<String> ciudades){
         this.context = context;
         this.layout = layout;
-        this.names = names;
+        this.ciudades = ciudades;
     }
 
 
@@ -25,12 +25,12 @@ public class CustomAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return names.size();
+        return ciudades.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return this.names.get(i);
+        return this.ciudades.get(i);
     }
 
     @Override
@@ -44,10 +44,11 @@ public class CustomAdapter extends BaseAdapter {
 
         LayoutInflater layoutInflater = LayoutInflater.from(this.context);
 
-        itemView = layoutInflater.inflate(R.layout.list_item, null);
-        String currentName = names.get(i);
+        itemView = layoutInflater.inflate(R.layout.item_list, null);
 
-        TextView textView = itemView.findViewById(R.id.TextItemLista);
+        String currentName = ciudades.get(i);
+
+        TextView textView = itemView.findViewById(R.id.textView);
         textView.setText(currentName);
 
         return itemView;
