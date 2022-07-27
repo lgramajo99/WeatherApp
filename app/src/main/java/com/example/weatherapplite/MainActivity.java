@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void redirectDetail(View view){
         intent = new Intent(this, DetailActivity.class);
+        //agregar "f" al final de la latitud y longitud para idicar que es de tipo float
+        intent.putExtra("lat", -26.839334f);
+        intent.putExtra("lon", -65.211447f);
         startActivity(intent);
     }
 }
