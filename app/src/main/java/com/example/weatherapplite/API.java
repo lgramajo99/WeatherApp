@@ -14,5 +14,5 @@ public interface API {
     //nombre despues de la base_url
     //https://api.openweathermap.org/data/2.5/weather
     @GET("weather")
-    Call<Results> getActualWeather(@Query("lat") float latitud, @Query("lon") float longitud, @Query("appid") String token, @Query("unidades")String unidades, @Query("lenguaje") String lenguaje);
+    Call<Modelo> getActualWeather(@Query("lat") float latitud, @Query("lon") float longitud, @Query("appid") String token, @Query("unidades")String unidades, @Query("lenguaje") String lenguaje);
 }
